@@ -6,8 +6,22 @@ use Cryptocurrency\Task1\CoinMarket;
 
 class MarketHtmlPresenter
 {
-    public function present(CoinMarket $market): string
+    public function present(CoinMarket $market)
     {
-        // @todo
+        $market->getCurrencies();
+        $str ='';
+     foreach ($market->getCurrencies() as $item) {
+
+         $str .= '<ul> 
+             <li><img src="'.$item->getLogoUrl().'"></li>
+             <li>'.$item->getName().'</li>
+             <li>'.$item->getDailyPrice().'</li>
+                </ul>';
+
+
+     }
+     return $str;
+
+
     }
 }

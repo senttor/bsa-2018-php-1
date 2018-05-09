@@ -10,3 +10,4 @@ interface Currency
 
     public function getLogoUrl(): string;
 }
+

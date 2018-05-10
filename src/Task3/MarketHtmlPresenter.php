@@ -6,7 +6,7 @@ use Cryptocurrency\Task1\CoinMarket;
 
 class MarketHtmlPresenter
 {
-    public function present(CoinMarket $market)
+    public function present(CoinMarket $market): string
     {
         $market->getCurrencies();
         $str ='';

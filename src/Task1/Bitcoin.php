@@ -11,8 +11,8 @@ namespace Cryptocurrency\Task1;
 
 class Bitcoin implements Currency
 {
-    public $name = 'Bitcoin';
-    public $logo = 'https://s2.coinmarketcap.com/static/img/coins/32x32/1.png';
+    private $name = 'Bitcoin';
+    private $logo = 'https://s2.coinmarketcap.com/static/img/coins/32x32/1.png';
     public $price;
 
     public function __construct(float $price)

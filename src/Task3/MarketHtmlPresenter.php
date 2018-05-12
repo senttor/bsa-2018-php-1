@@ -14,8 +14,7 @@ class MarketHtmlPresenter
 
          $str .= '<ul> 
              <li><img src="'.$item->getLogoUrl().'"></li>
-             <li>'.$item->getName().'</li>
-             <li>'.$item->getDailyPrice().'</li>
+             <li>'.$item->getName() : $item->getDailyPrice().'</li>
                 </ul>';
 
 

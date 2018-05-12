@@ -11,8 +11,8 @@ namespace Cryptocurrency\Task1;
 
 class Dogecoin  implements Currency
 {
-    public $name = 'Dogecoin';
-    public $logo = 'https://s2.coinmarketcap.com/static/img/coins/32x32/74.png';
+    private $name = 'Dogecoin';
+    private $logo = 'https://s2.coinmarketcap.com/static/img/coins/32x32/74.png';
     public $price;
 
     /**

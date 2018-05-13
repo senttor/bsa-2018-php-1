@@ -12,33 +12,24 @@ class CoinMarket
     protected $currencies = [];
     protected $maxPrice = [];
 
-
-
-    public function addCurrency(Currency $currency): void
+public function addCurrency(Currency $currency): void
     {
-
         array_push($this->currencies, $currency);
-
     }
 
     public function maxPrice(): float
     {
             # code...
-        $result = array_reduce($this->currencies,function($carry, Currency $item){
+        $result = array_reduce($this->currencies,function($carry, Currency $item)
+        {
             return max($item->getDailyPrice(),$carry);
         });
         return $result;
+ }
 
-    }
-
-
-    public function getCurrencies(): array
+public function getCurrencies(): array
     {
-
         return $this->currencies;
     }
-
-
-
 }
 
